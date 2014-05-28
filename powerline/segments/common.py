@@ -1,4 +1,5 @@
 # vim:fileencoding=utf-8:noet
+# flake8: NOQA
 
 from __future__ import unicode_literals, absolute_import, division
 
@@ -60,6 +61,7 @@ def branch(pl, segment_info, status_colors=False):
 
 	Highlight groups used: ``branch_clean``, ``branch_dirty``, ``branch``.
 	'''
+	return str('foobar')
 	name = segment_info['getcwd']()
 	repo = guess(path=name)
 	if repo is not None:
